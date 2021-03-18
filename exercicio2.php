@@ -1,15 +1,31 @@
 <?php
  
- function Nome() {
-    $nome = ["João", "Maria", "Camila", "Roberto"];
-    $nomeEspecifico = "Lucas";
+$nome = ["João", "Maria", "Camila", "Roberto"];
+$nomeEspecifico = "Camila";
 
-    if (in_array("Roberto", $nome)) {
-        echo "true";
-    }else{
-        if (in_array("João", $nome)) {
-            echo "false";
+function procuraNome($nomeEspecifico, $nome) {
+
+    foreach ($nomeEspecifico as $nome) {
+        if ($nomeEspecifico == $nome)
     }
-    }
-}
-Nome();
+
+    // if ($nomeEspecifico == $nome[0])  {
+    //     echo "true";
+    // }else
+    //     return;
+    // }if ($nomeEspecifico == $nome[1]) {
+    //     echo "true";
+    // }else{
+    //     return;
+    // }if ($nomeEspecifico == $nome[2]) {
+    //     echo "true";
+    // }else{
+    //     return;
+    // }if ($nomeEspecifico == $nome[3]) {
+    //     echo "true";
+    // }else{
+    //     echo "false";
+    //     } 
+    //     print_r($nome);
+    
+procuraNome($nomeEspecifico, $nome);

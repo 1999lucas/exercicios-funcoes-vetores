@@ -1,23 +1,18 @@
 <?php
 
-function arrayInvertido() {
-$entrada = ["Olá", 1, 2, "Trinta"];
-$saida = array_reverse($entrada);
+function inverteVetor(array $vetor){
+$vetorInvertido = [];
 
-$colors = array("red", "green", "blue", "yellow");
-
-foreach ($saida as $value) {
-  echo "$value <br>";
-}
+for($i = (count($vetor) - 1); $i >= 0; $i --){
+  $vetorInvertido[] = $vetor[$i];
 }
 
+return $vetorInvertido;
 
-// print_r($entrada);
+}
 
-// echo "<br/><br/>";
+$vetorQualquer = ["Olá", "Dois", "Quatro", "Trinta"];
 
-// print_r($saida);
+$vetorInvertido = inverteVetor($vetorQualquer);
 
-arrayInvertido();
-
-?>
+print_r($vetorInvertido);
